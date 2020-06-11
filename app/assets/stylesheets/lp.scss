@@ -86,7 +86,6 @@ main h2 {
 
 main h3 {
   display: block;
-  text-align: center;
   font-size: 1.2rem;
   margin: 2rem 0;
 }
@@ -100,7 +99,7 @@ main li {
 }
 
 section {
-  padding: 70px 10rem;
+  padding: 70px 3rem;
 }
 
 section:last-child {
@@ -112,6 +111,7 @@ section:last-child {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 7rem;
 }
 
 .profile--image {
@@ -148,6 +148,7 @@ section:last-child {
 .card {
   margin-bottom: 2rem;
   transition: 0.5s;
+  background-color: #fff;
 }
 
 .card:hover {
@@ -156,7 +157,6 @@ section:last-child {
 }
 
 .card--discription {
-  background-color: #fff;
   padding: 2rem;
   text-align: center;
 }
@@ -205,6 +205,16 @@ section:last-child {
   .profile--wrapper ul {
     grid-column: 3 / 5;
   }
+}
+
+@media (min-width: 900px) {
+  section {
+    padding: 70px 7rem;
+  }
+  
+  section:last-child {
+    padding: 70px 3rem;
+  }
 
   .card--wrapper {
     display: flex;
@@ -215,5 +225,4 @@ section:last-child {
     width: 30%;
   }
 }
-
 
