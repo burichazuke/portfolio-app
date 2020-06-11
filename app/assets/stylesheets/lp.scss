@@ -91,17 +91,16 @@ main h3 {
   margin: 2rem 0;
 }
 
+main ul {
+  margin-left: 20px;
+}
+
 main li {
   margin-bottom: 1rem;
 }
 
 section {
-  padding: 70px 2rem;
-  // margin-bottom: 3rem;
-}
-
-section:last-child {
-  margin-bottom: 0;
+  padding: 70px 5rem;
 }
 
 .profile--wrapper {
@@ -167,6 +166,11 @@ section:last-child {
 
 .card--text {
   text-align: left;
+  margin-bottom: 1rem;
+}
+
+.card--link {
+  color: #2690d4;
 }
 
 .footer {
