@@ -100,7 +100,11 @@ main li {
 }
 
 section {
-  padding: 70px 5rem;
+  padding: 70px 10rem;
+}
+
+section:last-child {
+  padding: 70px 3rem;
 }
 
 .profile--wrapper {
