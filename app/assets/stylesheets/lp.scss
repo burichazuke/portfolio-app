@@ -99,7 +99,7 @@ main li {
 }
 
 section {
-  padding: 70px 3rem;
+  padding: 70px 3rem 100px;
 }
 
 section:last-child {
@@ -115,7 +115,6 @@ section:last-child {
 }
 
 .profile--image {
-
   background-image: image-url("dog.png");
   background-repeat: no-repeat;
   background-size: 400px;
@@ -149,6 +148,8 @@ section:last-child {
   margin-bottom: 2rem;
   transition: 0.5s;
   background-color: #fff;
+  position: relative;
+  box-shadow: 0 0 4px #7f8fa6;
 }
 
 .card:hover {
@@ -174,7 +175,19 @@ section:last-child {
 }
 
 .card--link {
+  display: inline-block;
   color: #2690d4;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.card--link:hover {
+  font-weight: bold;
+  opacity: 0.7;
 }
 
 .footer {
@@ -209,7 +222,7 @@ section:last-child {
 
 @media (min-width: 900px) {
   section {
-    padding: 70px 7rem;
+    padding: 70px 7rem 100px;
   }
   
   section:last-child {
