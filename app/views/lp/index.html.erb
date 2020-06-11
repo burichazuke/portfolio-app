@@ -1,0 +1,114 @@
+<header>
+  <div class="bg-image">
+    <h1>welcome to my portfolio</h1>
+    <h3>takahiro terakado</h3>
+  </div>
+</header>
+
+<main>
+  <div class="header">
+    <a id="js-profile" href="#profile">profile</a>
+    <a id="js-skill" href="#skill">skill</a>
+    <a id="js-works" href="#works">works</a>
+  </div>
+
+  <section id="profile" class="profile">
+    <h2>profile</h2>
+    <div class="profile--wrapper grid">
+      <div class="profile--image">
+ 
+      </div>
+      <ul>
+        <li>
+          <p>名前： 寺門貴大</p>
+        </li>
+        <li>
+          <p>学歴： 武蔵大学経済学部</p>
+        </li>
+        <li>
+          <p>活動： <span>2019年からプログラミングスクールであるTECH:EXPERTに通い、プログラミングの学習をしています。</span></p>
+        </li>
+        <li>
+          <p>目標： プログラミングの学習をする内、フロントエンドの魅力を知りました。<br>現在はフロントエンジニアになるべく、就職活動をしています。</p>
+        </li>
+      </ul>
+    </div>
+
+
+    <h3>〜TECH:EXPERTで学んだこと〜</h3>
+    <p class="explanation">
+      チーム開発で開発する上での手法とアプリケーションの要件定義から運用方法まで学びました。
+
+      <br><br>チーム開発に関しましては、ツールはSIack、Git、Github、Trelloについて学び、アジャイル開発について学びました。 設計から運用方法については、ECサイトをサンプルにし、まずデータ定義からER図の作成しました。
+
+      <br><br>その後、開発をRuby on RailsとMySQLで、ユーザーの登録、口グインシステム、商品の登録、削除、編集システム、商品検索システム、クレジットカード での購入シスム、SNSでの認証システム、非同期でのコメント投稿システムなどサーバーサイドの実装、併せてhamI、 scss、 jqueryでフロントページの実装を行いました。
+
+      <br><br>最後に運用方法として、AWSのAmazonEC2サーバーをレンタルし、Linux、 WebサーバーとしてNginx、アプリケーション・サーバーとしてUnicorn、登録した商品の画像の保存にS3の環境構築を行い、Capistranoで自動でデプロイができるように行いました。
+      また、RubyでのWebスクレイピングの方法も学びました。
+    </p>
+
+  </section>
+
+  <section id="skill" class="skill">
+    <h2>skill</h2>
+    <div class="skill--wrapper">
+      <div class="skill--name">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>jQuery</p>
+        <p>Ruby on Rails</p>
+      </div>
+      <div class="skill--star">
+        <p>★★★★☆</p>
+        <p>★★★★☆</p>
+        <p>★★★☆☆</p>
+        <p>★★★☆☆</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="works" class="works">
+    <h2>works</h2>
+
+    <div class="card--wrapper">
+      <div class="card">
+        <%= image_tag 'freemarket.jpg' %>
+        <div class="card--discription">
+          <p class="card--title">メルカリコピーサイト</p>
+          <p class="card--text">
+            テックエキスパートの最終課題としてチーム５人でメルカリのコピーサイトを作成しました。<br>私が主に担当したのはトップページ・クレジット決済を使用した購入機能・商品詳細画面での画像スライドショーになります。
+          </p>
+          <a href="https://github.com/burichazuke/freemarket_sample_54a" target="_blank">Git Hub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <%= image_tag 'todo.png' %>
+        <div class="card--discription">
+          <p class="card--title">ToDo List</p>
+          <p class="card--text">
+            todoアプリです<br>目標の日時を指定するとカウントダウンであと何日あるか表示します。<br>カレンダーから予定を作成することもできます。
+          </p>
+          <a href="https://github.com/burichazuke/sevendaystodo" target="_blank">Git Hub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <%= image_tag 'cording.jpg' %>
+        <div class="card--discription">
+          <p class="card--title">コーディング</p>
+          <p class="card--text">モバイルファースト・レスポンシブデザインのコーディングの練習として作成したものです。</p>
+          <a href="https://github.com/burichazuke/GridCssResposive" target="_blank">Git Hub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer">
+    <p>Product By <span>TAKAHIRO TERAKADO</span></p>
+  </div>
+</footer>
