@@ -155,11 +155,20 @@ section:last-child {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+  margin-bottom: 8rem;
 }
 
 .skill--wrapper div {
   padding: 0 5rem;
   white-space: nowrap;
+}
+
+.text-align__left {
+  text-align: left;
+}
+
+.margin__bottom {
+  margin-bottom: 5rem;
 }
 
 .card {
