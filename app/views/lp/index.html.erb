@@ -73,8 +73,15 @@
     <div class="card--wrapper">
       <div class="card">
         <figure class="card--image">
-          <%= image_tag 'freemarket.jpg' %>     
+          <%= image_tag 'freemarket.jpg', class: "image" %>
+          <%= image_tag 'freemarket-2.png', class: "image" %>   
+          <%= image_tag 'freemarket-3.jpg', class: "image" %>  
         </figure>
+        <div class="card--image__s">
+          <%= image_tag 'freemarket.jpg', class: "image__s", data: {id: "0"} %>
+          <%= image_tag 'freemarket-2.png', class: "image__s", data: {id: "1"}  %> 
+          <%= image_tag 'freemarket-3.jpg', class: "image__s", data: {id: "2"} %> 
+        </div>
 
         <div class="card--discription">
           <p class="card--title">メルカリコピーサイト</p>
@@ -87,8 +94,15 @@
 
       <div class="card">
         <figure class="card--image">
-          <%= image_tag 'todo.png' %>
+          <%= image_tag 'todo.png', class: "image" %>
+          <%= image_tag 'todo-2.png', class: "image" %>   
+          <%= image_tag 'todo-3.png', class: "image" %>  
         </figure>        
+        <div class="card--image__s">
+          <%= image_tag 'todo.png', class: "image__s", data: {id: "0"} %>
+          <%= image_tag 'todo-2.png', class: "image__s", data: {id: "1"}  %> 
+          <%= image_tag 'todo-3.png', class: "image__s", data: {id: "2"} %> 
+        </div>
         <div class="card--discription">
           <p class="card--title">ToDo List</p>
           <p class="card--text">
@@ -100,8 +114,11 @@
 
       <div class="card">
         <figure class="card--image">
-          <%= image_tag 'cording.jpg' %>            
+          <%= image_tag 'cording.jpg', class: "image" %>            
         </figure>
+        <div class="card--image__s">
+          <%= image_tag 'cording.jpg', class: "image__s", data: {id: "0"} %>
+        </div>
         <div class="card--discription">
           <p class="card--title">コーディング</p>
           <p class="card--text">モバイルファースト・レスポンシブデザインのコーディングの練習として作成したものです。</p>
